@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me Form</title>
+</head>
+<!-- Important form input types are text, submit, choose file, choose date, radio button, range, and many more-->
+<body>
+    <!-- this is how you create a form in html, it will not unlock 
+    its full functionability untill we learn javascript but this will work for now-->
+    <!-- action attribute is the page it send you to after your input if you link an html, but if you link
+    an email address with mail to: before it then it will pop up the information inputted into the users email application
+    with the clients email already in the the send to-->
+    <!-- enctype attribute with text/plain ensures that the info being inputed into the email is in plain text and is readable-->
+    <form action="mailto:nathans@udel.edu" method="post" enctype="text/plain">
+        <!-- there are alot of input types that we can mess around with, such as the color picker
+        and checkbox, and password input-->
+        <!-- we must add a name attribute to each of our inputs as that is what identifies that data so it can be called on-->
+        <hr size="10" color="green">
+        <label>Your Name:</label>
+        <input type="text" name="YourName" value="">
+        <br>
+        <label>Your Email:</label>
+        <input type="email" name="YourEmail" value="">
+        <br>
+        <label>Password:</label>
+        <input type="password" name="YourPassword" value="">
+        <br>
+        <label>Do you want to signup for the email list? Y/N </label>
+        <input type="text" name="OptIN" value="">
+        <br>
+        <!-- here is how you make a text area for a message to the company on a contact page-->
+        <label>Your Message:</label>
+        <br>
+        <!-- the text areas size is defined by the developer in rows and cols,
+        however on the site the user can drag it as large as they want-->
+        <textarea name="Your Message" rows="10" cols="30"></textarea>
+        <br>
+        <!-- this is how you add a submit button-->
+        <input type="submit" name="">
+
+
+
+        
+    </form>
+</body>
+</html>
